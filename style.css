@@ -1,0 +1,274 @@
+@import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
+.ada-compliant-switch {
+    position: fixed;
+    z-index: 9999;
+    height: 45px;
+    width: auto;
+    padding: 0 20px;
+    background: #efefef;
+    border: 1px solid #d8d8d8;
+    border-bottom: none;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    outline: none;
+    display: none;
+    transition: none;
+    -webkit-transition: none;
+}
+
+.ada-compliant-switch[class*="x-"] {
+    display: block;
+}
+
+.ada-compliant-switch a svg {
+    height: 20px;
+    width: 20px;
+    vertical-align: middle;
+    margin: 0 5px 0;
+    -webkit-transform-origin: center;
+    -ms-transform-origin: center;
+    transform-origin: center;
+}
+
+.ada-compliant-switch.x-left a svg {
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.ada-compliant-switch.x-right a svg {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.ada-compliant-switch a svg * {
+    fill: #51565a !important;
+}
+
+.ada-compliant-switch a,
+.ada-compliant-switch a:hover {
+    color: #51565a;
+    display: block;
+    font-family: arial, sans-serif !important;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 44px;
+    text-transform: uppercase;
+    margin: 0 10px;
+    text-decoration: none;
+    outline: none;
+}
+
+.ada-compliant-switch .close-ada:before {
+    font-family: 'FontAwesome' !important;
+}
+
+.ada-compliant-switch.x-left.y-top {
+    left: 0;
+    top: 0;
+    box-shadow: 2px -2px 8px rgba(0, 0, 0, 0.15);
+    transform-origin: left bottom;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.ada-compliant-switch.x-left.y-center {
+    left: 0;
+    top: 50%;
+    box-shadow: 2px -2px 8px rgba(0, 0, 0, 0.15);
+    transform-origin: left bottom;
+    -webkit-transform: rotate(90deg) translateX(-70%);
+    -ms-transform: rotate(90deg) translateX(-70%);
+    transform: rotate(90deg) translateX(-70%);
+}
+
+.ada-compliant-switch.x-left.y-bottom {
+    left: 0;
+    top: auto;
+    bottom: 200px;
+    box-shadow: 2px -2px 8px rgba(0, 0, 0, 0.15);
+    transform-origin: left bottom;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.ada-compliant-switch.x-right.y-top {
+    right: 0;
+    top: 0;
+    left: auto;
+    box-shadow: -2px -2px 8px rgba(0, 0, 0, 0.15);
+    transform-origin: right bottom;
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.ada-compliant-switch.x-right.y-center {
+    right: 0;
+    top: 50%;
+    left: auto;
+    box-shadow: -2px -2px 8px rgba(0, 0, 0, 0.15);
+    transform-origin: right bottom;
+    -webkit-transform: rotate(-90deg) translateX(70%);
+    -ms-transform: rotate(-90deg) translateX(70%);
+    transform: rotate(-90deg) translateX(70%);
+}
+
+.ada-compliant-switch.x-right.y-bottom {
+    right: 0;
+    top: auto;
+    bottom: 200px;
+    left: auto;
+    box-shadow: -2px -2px 8px rgba(0, 0, 0, 0.15);
+    transform-origin: right bottom;
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.ada-compliant-switch.x-center.y-bottom {
+    top: auto;
+    bottom: 0;
+    left: 50%;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.15);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.ada-compliant-switch.x-center.y-top {
+    top: 0;
+    left: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    border-bottom: 1px solid #d8d8d8;
+    border-top: none;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.ada-compliant-switch .close-ada {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: -17px;
+    left: 5px;
+    height: 16px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 0 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-family: arial, sans-serif !important;
+    font-size: 10px;
+    line-height: 16px;
+    text-align: center;
+}
+
+.ada-compliant-switch.x-center.y-top .close-ada {
+    top: auto;
+    bottom: -17px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.ada-compliant-switch.x-center.y-center {
+    display: none !important;
+}
+
+.hide-ada-switch .ada-compliant-switch[class*="x-"] ~ form:after,
+.hide-ada-switch .ada-compliant-switch a {
+    display: none !important;
+    height: 0 !important;
+}
+
+.hide-ada-switch .ada-compliant-switch {
+    height: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.hide-ada-switch .ada-compliant-switch i:before {
+    content: "\f077" !important;
+}
+
+.ada-compliant-switch.x-center.y-top i:before {
+    content: "\f077" !important;
+}
+
+.hide-ada-switch .ada-compliant-switch.x-center.y-top i:before {
+    content: "\f078" !important;
+}
+
+@media screen and (max-width:480px) {
+    .ada-compliant-switch .close-ada {
+        top: -21px;
+        height: 20px;
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .ada-compliant-switch.x-center.y-top .close-ada {
+        top: -21px !important;
+        bottom: auto !important;
+        border-top-right-radius: 10px !important;
+        border-top-left-radius: 10px !important;
+        border-bottom-right-radius: 0 !important;
+        border-bottom-left-radius: 0 !important;
+    }
+    .ada-compliant-switch i:before {
+        content: "\f078" !important;
+    }
+    .hide-ada-switch .ada-compliant-switch i:before {
+        content: "\f077" !important;
+    }
+    .ada-compliant-switch {
+        -webkit-transform: rotate(0) !important;
+        -ms-transform: rotate(0) !important;
+        transform: rotate(0) !important;
+        top: auto !important;
+        bottom: 0 !important;
+        left: 10px !important;
+        right: auto !important;
+        height: 35px !important;
+        padding: 0 10px !important;
+        box-shadow: none !important;
+    }
+    .ada-compliant-switch a {
+        font-size: 13px !important;
+        line-height: 33px !important;
+        font-weight: 600 !important;
+    }
+    .ada-compliant-switch a:before {
+        font-size: 20px !important;
+    }
+    .ada-compliant-switch[class*="x-"] ~ form:after {
+        content: '';
+        display: block;
+        height: 55px;
+        width: 100%;
+        background: #000;
+    }
+    .ada-compliant-switch.x-center.y-top {
+        border-bottom: 0 solid #d8d8d8;
+        border-top: 1px solid #d8d8d8;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+    }
+    .ada-compliant-switch.x-right a svg,
+    .ada-compliant-switch.x-left a svg {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
